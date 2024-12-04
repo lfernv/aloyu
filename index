@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeireLaMejorNoviaDelMundo</title>
+    
+    <link rel="stylesheet" href="loveyou.css">
+    
+    
+    <style>
+        #No {
+    grid-row: 5;
+    grid-column: 6;
+}
+    </style>
+</head>
+<body>  
+        <div>
+            <p id="p" hidden>Yo tambien lloro</p>
+        <h1 id="1">¿Cuánto te quiero?</h1>
+        <section>
+        <button id="Infinito">Infinito</button>
+        <button id="Nadadenada">Nadadenada</button>
+    </section>
+    </div>
+   
+    <script src="loveyou.js"></script>
+</body>
+</html>
