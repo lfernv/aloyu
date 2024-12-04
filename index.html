@@ -8,45 +8,82 @@
     <link rel="stylesheet" href="loveyou.css">
     
     <style>
-        #No {
-            grid-row: 5;
-            grid-column: 6;
+        /* Estilo general de la página */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(45deg, #ff6ec7, #fed6e3); /* Fondo con gradiente */
+            color: #fff;
+            text-align: center;
+            box-sizing: border-box;
         }
-        
-        /* Mover la palabra Nadadenada */
+
+        /* Contenedor principal */
+        .container {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            width: 100%;
+        }
+
+        /* Título */
+        h1 {
+            font-size: 40px;
+            margin-bottom: 30px;
+            color: #fff;
+            font-weight: bold;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Botón Infinito */
+        #Infinito {
+            font-size: 18px;
+            padding: 15px 30px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        #Infinito:hover {
+            background-color: #218838;
+            transform: scale(1.1);
+        }
+
+        /* Animación de la palabra Nadadenada */
         #Nadadenada {
             display: inline-block;
             animation: mover 3s infinite linear;
             cursor: not-allowed; /* No se puede hacer clic */
             font-weight: bold;
-            font-size: 20px;
-            color: #FF6347; /* Un color llamativo */
+            font-size: 25px;
+            color: #FF6347; /* Color llamativo */
+            margin-top: 20px;
         }
 
         @keyframes mover {
             0% { transform: translateX(0); }
-            100% { transform: translateX(100px); }
+            100% { transform: translateX(150px); }
         }
 
-        /* Estilo del botón Infinito */
-        #Infinito {
-            font-size: 18px;
-            padding: 10px 20px;
-            background-color: #28a745;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+        /* Añadir espacio entre botones */
+        section {
+            margin-top: 20px;
         }
-
-        #Infinito:hover {
-            background-color: #218838;
-        }
+        
     </style>
 </head>
 <body>  
-    <div>
-        <p id="p" hidden>Yo también lloro</p>
+    <div class="container">
         <h1 id="1">¿Cuánto te quiero?</h1>
         <section>
             <button id="Infinito" onclick="redirigir()">Infinito</button>
@@ -59,9 +96,10 @@
     <script>
         // Función para redirigir al hacer clic en el botón "Infinito"
         function redirigir() {
-            window.location.href = "aloviu.html"; // Redirige a otra págin
+            window.location.href = "aloviu.html"; // Redirige a otra página
         }
     </script>
 </body>
 </html>
+
 
