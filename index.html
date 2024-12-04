@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,24 +7,61 @@
     
     <link rel="stylesheet" href="loveyou.css">
     
-    
     <style>
         #No {
-    grid-row: 5;
-    grid-column: 6;
-}
+            grid-row: 5;
+            grid-column: 6;
+        }
+        
+        /* Mover la palabra Nadadenada */
+        #Nadadenada {
+            display: inline-block;
+            animation: mover 3s infinite linear;
+            cursor: not-allowed; /* No se puede hacer clic */
+            font-weight: bold;
+            font-size: 20px;
+            color: #FF6347; /* Un color llamativo */
+        }
+
+        @keyframes mover {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(100px); }
+        }
+
+        /* Estilo del botón Infinito */
+        #Infinito {
+            font-size: 18px;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #Infinito:hover {
+            background-color: #218838;
+        }
     </style>
 </head>
 <body>  
-        <div>
-            <p id="p" hidden>Yo tambien lloro</p>
+    <div>
+        <p id="p" hidden>Yo también lloro</p>
         <h1 id="1">¿Cuánto te quiero?</h1>
         <section>
-        <button id="Infinito">Infinito</button>
-        <button id="Nadadenada">Nadadenada</button>
-    </section>
+            <button id="Infinito" onclick="redirigir()">Infinito</button>
+            <p id="Nadadenada">Nadadenada</p>
+        </section>
     </div>
    
     <script src="loveyou.js"></script>
+
+    <script>
+        // Función para redirigir al hacer clic en el botón "Infinito"
+        function redirigir() {
+            window.location.href = "otraPagina.html"; // Redirige a otra página
+        }
+    </script>
 </body>
 </html>
+
